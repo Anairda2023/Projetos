@@ -1,0 +1,50 @@
+.tabela {
+    border: 1px dotted black;
+    width: 500px;
+    margin: auto;
+    background-color: aquamarine;
+}
+
+.titulo{
+    text-align:center;
+    color: blue;
+    
+
+}
+
+.componentes label {
+
+    margin-bottom: 20px;
+    display: block;
+    font-weight: bold;
+    font-family: Verdana;
+
+}
+
+.componentes input, select, textarea {
+
+    width: 400px;
+
+}
+
+
+.componentes button {
+
+    width: 60px;
+    height: 30px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 100px;
+    background-color: blueviolet;
+    
+}
+.componentes button:hover {
+
+    background-color: crimson;
+
+}
+
+
+
+
