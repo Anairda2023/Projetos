@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <h3>Cadastro de Filmes</h3>
+    <form action="" method="post">
+    <div class="componentes">
+        <label  for="Título">Título:</label>
+        <input type="text" name="Título" id="Título" >
+    </div>
+    <div class="componentes">
+        <label for="Gênero">Gênero:</label>
+        <select name="Gênero" id="Gênero:">
+            <option value="Ação">Ação</option>
+            <option value="Suspense">Suspense</option>
+            <option value="Comédia">Comédia</option>
+            <option value="Ficção">Ficção</option>
+            <option value="Romântico">Romântico</option>
+        </select>
+    </div>
+    <div class="componentes">
+        <label for="Ano">Ano de Lançamento:</label>
+        <input class="compontentes" type="number" name="Ano" id="Ano:" min="1900" max="2100" value="2023">
+    </div>
+    <div class="componentes">
+        <label for="sinopse">Sinopse</label>
+        <textarea class="componentes" name="Sinopse" id="Sinopse" cols="30" rows="5"></textarea>
+    </div>
+    <div class="componentes">
+        <button type="submit">Cadastrar</button>
+        <button type="reset">Limpar</button>        
+    </div>
+    
+    </form>
+  
+</body>
+</html>

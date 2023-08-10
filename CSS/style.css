@@ -1,0 +1,33 @@
+.tabela {
+    border: 1px solid blueviolet;
+    width: 500px;
+    margin: auto;
+    background-color: aqua;
+}   
+.titulo{
+    text-align: center;
+    color: brown;
+}     
+.componentes{
+    margin-bottom: 30px;
+    display: block;
+}
+.componentes label{
+    display: block;
+    font-weight: bold;
+}
+.componentes input, select, textarea{
+    width: 400px;
+}
+.componentes button {
+    width: 100px;
+    height: 30px;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-radius: 10;
+    background-color: rgb(24, 109, 80);
+}
+.componentes button :hover {
+
+   background-color:black}
