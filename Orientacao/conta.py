@@ -31,7 +31,18 @@ class Conta:
         
 #Métodos
     def depositar(self, valor: float):
-        self.__saldo += valor
+        pode_depositar = valor > 0
+        if pode_depositar:
+            self.__saldo += valor
+         
+    def sacar(self, valor: float):
+        pode_sacar = valor > 0 and self.__saldo >= valor
+        if pode_sacar:
+            self.__saldo -= valor   
 
-
-    
+    def transferir(self, valor: float, conta_destino):
+        pode_transferir = valor > 0 and self.__saldo >= valor
+        if pode_transferir:
+            self.sacar(valor)
+            conta_destino.depositar(valor)
+            

@@ -1,4 +1,4 @@
-from lampada import Lampada
+
 from conta import Conta
 
 #Criando uma instância de lâmpada (amarela, 20, 200) - como eu construo meu objeto = Lampada()
@@ -22,8 +22,16 @@ print(f"Saldo de {conta_pedro.titular} é: {conta_pedro.saldo}")
 
 conta_jose = Conta(456, 147, "José")
 
-conta_jose.depositar(500)
+conta_pedro.depositar(1000)
+conta_jose.depositar(1000)
 
 print(f"Saldo de {conta_jose.titular} é {conta_jose.saldo}")
 
+print(f"Saldo de {conta_pedro.titular} é {conta_pedro.saldo}")
 
+
+conta_pedro.transferir(500, conta_jose)
+
+print(f"Saldo de {conta_pedro.titular} é {conta_pedro.saldo}")
+
+print(f"Saldo de {conta_jose.titular} é {conta_jose.saldo}")
