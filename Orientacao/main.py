@@ -1,5 +1,5 @@
 
-from conta import Conta
+from conta import ContaCorrente, ContaPoupanca
 
 #Criando uma instância de lâmpada (amarela, 20, 200) - como eu construo meu objeto = Lampada()
 
@@ -13,25 +13,24 @@ from conta import Conta
 
 #print(lampada1.potencia)
 
-conta_pedro = Conta(123, 147, "Pedro")
+conta_pedro = ContaCorrente(123, 147, "Pedro")
 
+conta_jose = ContaCorrente(456, 147, "José")
 
-conta_pedro.depositar(20)
-
-print(f"Saldo de {conta_pedro.titular} é: {conta_pedro.saldo}")
-
-conta_jose = Conta(456, 147, "José")
-
-conta_pedro.depositar(1000)
 conta_jose.depositar(1000)
 
-print(f"Saldo de {conta_jose.titular} é {conta_jose.saldo}")
+print(conta_jose)
 
-print(f"Saldo de {conta_pedro.titular} é {conta_pedro.saldo}")
+conta_daniele = ContaPoupanca(963, 854, "Daniele")
+
+conta_daniele.depositar(1000)
+
+print(conta_daniele)
+
+conta_jose.sacar(1500)
 
 
-conta_pedro.transferir(500, conta_jose)
+print(conta_jose)
 
-print(f"Saldo de {conta_pedro.titular} é {conta_pedro.saldo}")
 
-print(f"Saldo de {conta_jose.titular} é {conta_jose.saldo}")
+
