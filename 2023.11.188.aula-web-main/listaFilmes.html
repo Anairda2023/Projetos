@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filmes</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <div class="d-flex justify-content-between align-items-center">
+        <h1>Lista de Filmes</h1>
+        <a href="cadastroFilmes.html" class="btn btn-success btn-lg"
+          >Cadastrar</a
+        >
+      </div>
+      <!--Definição da tabela-->
+      <table class="table table-striped table-hover">
+        <thead>
+          <!--Cabeçalho da tabela-->
+          <tr>
+            <!--Linha do cabeçalho-->
+            <th>#</th>
+            <th>Título</th>
+            <th>Gênero</th>
+            <th>Sinopse</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!--Corpo da tabela-->
+          <tr>
+            <td>1</td>
+            <td>Homem Aranha</td>
+            <td>Ação</td>
+            <td>Sinopse</td>
+            <td>
+                <button class="btn btn-warning btn-sm" title="Editar">
+                    <i class="bi bi-pencil-square"></i>
+                </button>
+                <button class="btn btn-danger btn-sm" title="Remover">
+                    <i class="bi bi-trash"></i>
+                </button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Avatar</td>
+            <td>Ficção</td>
+            <td>Sinopse</td>
+            <td>
+                <button class="btn btn-warning btn-sm" title="Editar">
+                    <i class="bi bi-pencil-square"></i>
+                </button>
+                <button class="btn btn-danger btn-sm" title="Remover">
+                    <i class="bi bi-trash"></i>
+                </button>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Vovozona</td>
+            <td>Comédia</td>
+            <td>Sinopse</td>
+            <td>
+                <button class="btn btn-warning btn-sm" title="Editar">
+                    <i class="bi bi-pencil-square"></i>
+                </button>
+                <button class="btn btn-danger btn-sm" title="Remover">
+                    <i class="bi bi-trash"></i>
+                </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
